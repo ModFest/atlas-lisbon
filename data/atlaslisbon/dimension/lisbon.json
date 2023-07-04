@@ -1,0 +1,94 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+        "type": "atlas:atlas",
+        "map_info": "atlaslisbon:lisbon",
+        "settings": "atlas:no_entrances",
+        "biome_source": {
+            "type": "atlas:atlas",
+            "map_info": "atlaslisbon:lisbon",
+            "biome_map": "atlaslisbon:atlas/map/biomes",
+            "default": "minecraft:the_void",
+            "cave_biomes": [],
+            "below_depth": 5,
+            "biomes": [
+                {
+                    "biome": "minecraft:deep_cold_ocean",
+                    "color": 398699
+                },
+                {
+                    "biome": "minecraft:ocean",
+                    "color": 2373541
+                },
+                {
+                    "biome": "minecraft:lukewarm_ocean",
+                    "color": 3765155
+                },
+                {
+                    "biome": "minecraft:warm_ocean",
+                    "color": 5152480
+                },
+                {
+                    "biome": "minecraft:beach",
+                    "color": 16766976
+                },
+                {
+                    "biome": "minecraft:plains",
+                    "color": 2522880
+                },
+                {
+                    "priority": [
+                        "ecotones:steppe",
+                        "minecraft:savanna"
+                    ],
+                    "color": 8824103
+                },
+                {
+                    "priority": [
+                        "ecotones:woodland_thicket",
+                        "terrestria:dense_woodlands",
+                        "minecraft:old_growth_spruce_taiga"
+                    ],
+                    "color": 6833408
+                },
+                {
+                    "priority": [
+                        "ecotones:dry_forest",
+                        "minecraft:windswept_forest"
+                    ],
+                    "color": 21554
+                },
+                {
+                    "biome": "minecraft:stony_peaks",
+                    "color": 10526880
+                },
+                {
+                    "biome": "minecraft:meadow",
+                    "color": 6008180
+                },
+                {
+                    "priority": [
+                        "ecotones:blessed_springs",
+                        "minecraft:swamp"
+                    ],
+                    "color": 50827
+                },
+                {
+                    "priority": [
+                        "ecotones:lush_savanna",
+                        "minecraft:savanna"
+                    ],
+                    "color": 3958794
+                },
+                {
+                    "priority": [
+                        "wwizardry:forbidden_forest",
+                        "terrestria:cypress_swamp",
+                        "minecraft:mangrove_swamp"
+                    ],
+                    "color": 18749
+                }
+            ]
+        }
+    }
+}
