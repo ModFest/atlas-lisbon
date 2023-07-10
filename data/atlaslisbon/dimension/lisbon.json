@@ -64,7 +64,14 @@
                 },
                 {
                     "biome": "minecraft:stony_peaks",
-                    "color": 10526880
+                    "color": 16777215
+                },
+                {
+                    "priority": [
+                        "atlaslibson:paved",
+                        "minecraft:stony_peaks"
+                    ],
+                    "color": 11053224
                 },
                 {
                     "biome": "minecraft:meadow",
@@ -91,6 +98,13 @@
                         "minecraft:mangrove_swamp"
                     ],
                     "color": 18749
+                },
+                {
+                    "priority": [
+                        "yttr:wasteland",
+                        "minecraft:wooded_badlands"
+                    ],
+                    "color": 3485483
                 }
             ]
         }
