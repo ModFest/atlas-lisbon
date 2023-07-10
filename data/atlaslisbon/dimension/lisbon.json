@@ -29,6 +29,10 @@
                     "color": 5152480
                 },
                 {
+                    "biome": "minecraft:river",
+                    "color": 3828161
+                },
+                {
                     "biome": "minecraft:beach",
                     "color": 16766976
                 },
