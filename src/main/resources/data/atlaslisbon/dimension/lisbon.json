@@ -57,7 +57,7 @@
                 },
                 {
                     "priority": [
-                        "ecotones:dry_forest",
+                        "ecotones:dry_fields",
                         "minecraft:windswept_forest"
                     ],
                     "color": 21554
