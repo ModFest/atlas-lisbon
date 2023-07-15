@@ -93,7 +93,7 @@
                 },
                 {
                     "priority": [
-                        "wwizardry:forbidden_fields",
+                        "wwizardry:forgotten_fields",
                         "terrestria:cypress_swamp",
                         "minecraft:mangrove_swamp"
                     ],
