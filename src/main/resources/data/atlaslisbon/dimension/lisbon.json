@@ -57,7 +57,7 @@
                 },
                 {
                     "priority": [
-                        "ecotones:dry_fields",
+                        "ecotones:dry_forest",
                         "minecraft:windswept_forest"
                     ],
                     "color": 21554
@@ -93,7 +93,7 @@
                 },
                 {
                     "priority": [
-                        "wwizardry:forbidden_forest",
+                        "wwizardry:forbidden_fields",
                         "terrestria:cypress_swamp",
                         "minecraft:mangrove_swamp"
                     ],
