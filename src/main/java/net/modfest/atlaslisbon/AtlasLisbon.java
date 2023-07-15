@@ -3,6 +3,7 @@ package net.modfest.atlaslisbon;
 import net.minecraft.util.Identifier;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
+import org.quiltmc.qsl.worldgen.surface_rule.api.SurfaceRuleEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +20,7 @@ public class AtlasLisbon implements ModInitializer {
 	@Override
 	public void onInitialize(ModContainer mod) {
 		LOGGER.info("Atlas Lisbon: Mui Nobre e Sempre Leal");
+
+		SurfaceRuleEvents.MODIFY_OVERWORLD.register(new LibsonSurfaceRules());
 	}
 }
