@@ -68,7 +68,7 @@
                 },
                 {
                     "priority": [
-                        "atlaslibson:paved",
+                        "atlaslisbon:paved",
                         "minecraft:stony_peaks"
                     ],
                     "color": 11053224
@@ -79,7 +79,7 @@
                 },
                 {
                     "priority": [
-                        "ecotones:blessed_springs",
+                        "ecotones:granite_springs",
                         "minecraft:swamp"
                     ],
                     "color": 50827
