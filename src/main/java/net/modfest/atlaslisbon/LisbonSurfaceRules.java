@@ -15,31 +15,17 @@ public class LisbonSurfaceRules implements SurfaceRuleEvents.OverworldModifierCa
 	public void modifyOverworldRules(SurfaceRuleContext.@NotNull Overworld context) {
 		context.materialRules().add(0,
 			SurfaceRules.condition(
-				SurfaceRules.abovePreliminarySurface(),
-				SurfaceRules.sequence(
+				SurfaceRules.biome(RegistryKey.of(RegistryKeys.BIOME, AtlasLisbon.PAVED)),
+				SurfaceRules.condition(
+					SurfaceRules.ON_FLOOR,
 					SurfaceRules.condition(
-						SurfaceRules.ON_FLOOR,
+						SurfaceRules.abovePreliminarySurface(),
 						SurfaceRules.sequence(
 							SurfaceRules.condition(
-								SurfaceRules.biome(RegistryKey.of(RegistryKeys.BIOME, AtlasLisbon.PAVED)),
+								SurfaceRules.water(0, 0),
 								SurfaceRules.block(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState())
-							)
-						)
-					),
-					//
-					SurfaceRules.condition(
-						SurfaceRules.UNDER_FLOOR,
-						SurfaceRules.sequence(
-							SurfaceRules.condition(
-								SurfaceRules.biome(RegistryKey.of(RegistryKeys.BIOME, AtlasLisbon.PAVED)),
-								SurfaceRules.block(Blocks.STONE.getDefaultState())
 							),
-							SurfaceRules.condition(SurfaceRules.noiseThreshold(NoiseParametersKeys.ICE, -0.0625, 0.025),
-								SurfaceRules.condition(
-									SurfaceRules.biome(RegistryKey.of(RegistryKeys.BIOME, AtlasLisbon.PAVED)),
-									SurfaceRules.block(Blocks.GRAVEL.getDefaultState())
-								)
-							)
+							SurfaceRules.block(Blocks.GRAVEL.getDefaultState())
 						)
 					)
 				)
