@@ -53,14 +53,14 @@
                         "terrestria:dense_woodlands",
                         "minecraft:old_growth_spruce_taiga"
                     ],
-                    "color": 6833408
-                },
-                {
-                    "biome": "atlaslisbon:podzol",
                     "color": 21554
                 },
                 {
                     "biome": "atlaslisbon:podzol",
+                    "color": 6833408
+                },
+                {
+                    "biome": "minecraft:jagged_peaks",
                     "color": 16777215
                 },
                 {
@@ -71,7 +71,10 @@
                     "color": 11053224
                 },
                 {
-                    "biome": "ecotones:birch_grove",
+                    "priority": [
+                        "ecotones:birch_grove",
+                        "minecraft:meadow"
+                    ],
                     "color": 6008180
                 },
                 {
