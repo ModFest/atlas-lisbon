@@ -19,9 +19,13 @@ public class SurfaceGen {
 				int topY = chunk.sampleHeightmap(Heightmap.Type.WORLD_SURFACE_WG, x, z);
 				mutable.set((cpos.x << 4) + x, topY, (cpos.z << 4) + z);
 				Holder<Biome> biome = region.getBiome(mutable);
-				
+
 				if (biome.getKey().orElseThrow().getValue().equals(AtlasLisbon.PAVED)) {
 					chunk.setBlockState(mutable, Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(), false);
+				}
+
+				if (biome.getKey().orElseThrow().getValue().equals(AtlasLisbon.PODZOL)) {
+					chunk.setBlockState(mutable, Blocks.PODZOL.getDefaultState(), false);
 				}
 			}
 		}

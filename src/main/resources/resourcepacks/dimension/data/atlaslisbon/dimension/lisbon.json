@@ -42,7 +42,7 @@
                 },
                 {
                     "priority": [
-                        "ecotones:steppe",
+                        "ecotones:temperate_grassland",
                         "minecraft:savanna"
                     ],
                     "color": 8824103
@@ -56,14 +56,11 @@
                     "color": 6833408
                 },
                 {
-                    "priority": [
-                        "ecotones:dry_forest",
-                        "minecraft:windswept_forest"
-                    ],
+                    "biome": "atlaslisbon:podzol",
                     "color": 21554
                 },
                 {
-                    "biome": "minecraft:stony_peaks",
+                    "biome": "atlaslisbon:podzol",
                     "color": 16777215
                 },
                 {
@@ -74,7 +71,7 @@
                     "color": 11053224
                 },
                 {
-                    "biome": "minecraft:meadow",
+                    "biome": "ecotones:birch_grove",
                     "color": 6008180
                 },
                 {
@@ -86,7 +83,7 @@
                 },
                 {
                     "priority": [
-                        "ecotones:lush_savanna",
+                        "ecotones:dry_savanna",
                         "minecraft:savanna"
                     ],
                     "color": 3958794
