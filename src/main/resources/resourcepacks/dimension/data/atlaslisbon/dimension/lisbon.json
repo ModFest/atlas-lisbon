@@ -37,7 +37,10 @@
                     "color": 16766976
                 },
                 {
-                    "biome": "minecraft:plains",
+                    "priority": [
+                        "ecotones:birch_grove",
+                        "minecraft:plains"
+                    ],
                     "color": 2522880
                 },
                 {
@@ -50,7 +53,6 @@
                 {
                     "priority": [
                         "ecotones:woodland_thicket",
-                        "terrestria:dense_woodlands",
                         "minecraft:old_growth_spruce_taiga"
                     ],
                     "color": 21554
@@ -64,15 +66,12 @@
                     "color": 16777215
                 },
                 {
-                    "priority": [
-                        "atlaslisbon:paved",
-                        "minecraft:stony_peaks"
-                    ],
+                    "biome": "atlaslisbon:paved",
                     "color": 11053224
                 },
                 {
                     "priority": [
-                        "ecotones:birch_grove",
+                        "ecotones:spruce_marsh",
                         "minecraft:meadow"
                     ],
                     "color": 6008180
@@ -94,7 +93,6 @@
                 {
                     "priority": [
                         "wwizardry:forgotten_fields",
-                        "terrestria:cypress_swamp",
                         "minecraft:mangrove_swamp"
                     ],
                     "color": 18749
