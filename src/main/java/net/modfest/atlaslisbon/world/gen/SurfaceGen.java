@@ -14,12 +14,15 @@ import net.modfest.atlaslisbon.AtlasLisbon;
 
 public class SurfaceGen {
 
+	public static final Identifier PAVED = AtlasLisbon.id("paved");
+	public static final Identifier PODZOL = AtlasLisbon.id("podzol");
+
 	public static Block getSurface(Holder<Biome> biome) {
 		Identifier biomeKey = biome.getKey().orElseThrow().getValue();
-		if (biomeKey.equals(AtlasLisbon.PAVED)) {
+		if (biomeKey.equals(PAVED)) {
 			return Blocks.CYAN_TERRACOTTA;
 		}
-		if (biomeKey.equals(AtlasLisbon.PODZOL)) {
+		if (biomeKey.equals(PODZOL)) {
 			return Blocks.PODZOL;
 		}
 		return null;

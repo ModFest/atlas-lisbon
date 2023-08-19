@@ -12,8 +12,6 @@ import org.slf4j.LoggerFactory;
 public class AtlasLisbon implements ModInitializer {
 
 	public static final String ID = "atlaslisbon";
-	public static final Identifier PAVED = id("paved");
-	public static final Identifier PODZOL = id("podzol");
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
