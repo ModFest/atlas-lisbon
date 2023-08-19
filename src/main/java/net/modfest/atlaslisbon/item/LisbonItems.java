@@ -1,9 +1,12 @@
 package net.modfest.atlaslisbon.item;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.modfest.atlaslisbon.AtlasLisbon;
@@ -44,5 +47,9 @@ public class LisbonItems {
 		registerItem(PASTEL_DE_NATA, "pastel_de_nata");
 		registerItem(QUEIJO_DE_AZEITAO, "queijo_de_azeitao");
 		registerItem(GINJINHA_BOTTLE, "ginjinha_bottle");
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINKS).register(entries -> {
+			entries.addAfter(Items.PUMPKIN_PIE, PASTEL_DE_NATA, QUEIJO_DE_AZEITAO);
+			entries.addAfter(Items.HONEY_BOTTLE, GINJINHA_BOTTLE);
+		});
 	}
 }
