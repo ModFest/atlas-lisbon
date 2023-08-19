@@ -9,20 +9,15 @@
         "tag": "c:buckets/honey"
       }
     ],
-    [
-      {
-        "item": "minecraft:sweet_berries"
-      },
-      {
-        "item": "minecraft:glow_berries"
-      }
-    ],
+    {
+      "tag": "minecraft:fox_food"
+    },
     {
       "item": "minecraft:sugar"
-    },
+    }
   ],
   "result": {
-    "item": "atlaslisbon:queijo_de_azeitao",
+    "item": "atlaslisbon:ginjinha_bottle",
     "count": 4
   }
 }

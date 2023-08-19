@@ -3,6 +3,9 @@
   "values": [
     "minecraft:potato",
     "minecraft:beetroot",
-    "#c:vegetables"
+    {
+      "required": false,
+      "id": "#c:vegetables"
+    }
   ]
 }

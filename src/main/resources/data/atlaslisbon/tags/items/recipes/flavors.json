@@ -2,8 +2,17 @@
   "replace": false,
   "values": [
     "minecraft:sugar",
-    "c:salt",
-    "c:salts",
-    "c:salt_dusts"
+    {
+      "required": false,
+      "id": "#c:salt"
+    },
+    {
+      "required": false,
+      "id": "#c:salts"
+    },
+    {
+      "required": false,
+      "id": "#c:salt_dusts"
+    }
   ]
 }

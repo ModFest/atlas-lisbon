@@ -2,7 +2,13 @@
   "replace": false,
   "values": [
     "minecraft:milk_bucket",
-    "#c:milks",
-    "#c:milk_bottles"
+    {
+      "required": false,
+      "id": "#c:milks"
+    },
+    {
+      "required": false,
+      "id": "#c:milk_bottles"
+    }
   ]
 }
