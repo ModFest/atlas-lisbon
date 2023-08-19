@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FSF",
+    "MWM",
+    "EEE"
+  ],
+  "key": {
+    "F": [
+      {
+        "item": "minecraft:wheat"
+      },
+      {
+        "tag": "c:grain"
+      },
+      {
+        "tag": "c:grains"
+      },
+      {
+        "tag": "c:flour"
+      },
+      {
+        "tag": "c:dough"
+      }
+    ],
+    "S": {
+      "tag": "atlaslisbon:recipes/flavors"
+    },
+    "M": {
+      "tag": "atlaslisbon:recipes/milk"
+    },
+    "W": [
+      {
+        "item": "minecraft:water_bucket"
+      },
+      {
+        "tag": "c:water_bottles"
+      }
+    ],
+    "E": [
+      {
+        "item": "minecraft:egg"
+      },
+      {
+        "tag": "c:eggs"
+      }
+    ]
+  },
+  "result": {
+    "item": "atlaslisbon:pastel_de_nata",
+    "count": 16
+  }
+}

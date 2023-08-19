@@ -17,6 +17,7 @@ public class BottleItem extends Item {
 
 	@Override
 	public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+		super.finishUsing(stack, world, user);
 		ItemStack bottle = Items.GLASS_BOTTLE.getDefaultStack();
 		if (stack.isEmpty()) {
 			return bottle;

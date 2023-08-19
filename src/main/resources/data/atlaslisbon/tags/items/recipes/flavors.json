@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sugar",
+    "c:salt",
+    "c:salts",
+    "c:salt_dusts"
+  ]
+}

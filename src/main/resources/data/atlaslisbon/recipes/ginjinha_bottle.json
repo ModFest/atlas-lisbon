@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:honey_bottle"
+      },
+      {
+        "tag": "c:buckets/honey"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:glow_berries"
+      }
+    ],
+    {
+      "item": "minecraft:sugar"
+    },
+  ],
+  "result": {
+    "item": "atlaslisbon:queijo_de_azeitao",
+    "count": 4
+  }
+}

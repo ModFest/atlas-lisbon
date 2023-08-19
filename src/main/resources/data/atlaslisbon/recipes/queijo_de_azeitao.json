@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "atlaslisbon:recipes/milk"
+    },
+    {
+      "tag": "atlaslisbon:recipes/greens"
+    },
+    {
+      "item": "atlaslisbon:recipes/flavors"
+    }
+  ],
+  "result": {
+    "item": "atlaslisbon:queijo_de_azeitao",
+    "count": 4
+  }
+}
