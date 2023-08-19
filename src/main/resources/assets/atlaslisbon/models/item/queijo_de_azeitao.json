@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "atlaslisbon:item/queijo_de_azeitao"
+  }
+}
