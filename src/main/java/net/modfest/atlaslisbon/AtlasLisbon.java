@@ -6,7 +6,6 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
-import org.quiltmc.qsl.worldgen.surface_rule.api.SurfaceRuleEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,9 +25,10 @@ public class AtlasLisbon implements ModInitializer {
 	public void onInitialize(ModContainer mod) {
 		LOGGER.info("Atlas Lisbon: Mui Nobre e Sempre Leal");
 		LisbonItems.register();
+		registerPack(mod);
+	}
 
-		SurfaceRuleEvents.MODIFY_OVERWORLD.register(new LisbonSurfaceRules());
-
+	public static void registerPack(ModContainer mod) {
 		ResourceLoader.registerBuiltinResourcePack(id("dimension"), mod, ResourcePackActivationType.DEFAULT_ENABLED);
 	}
 }
