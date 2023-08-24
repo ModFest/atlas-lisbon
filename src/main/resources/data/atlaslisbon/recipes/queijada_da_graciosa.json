@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "FSF",
-    "MWM",
-    "EEE"
+    "SEM",
+    "EEE",
+    "WEF"
   ],
   "key": {
     "F":{
@@ -23,7 +23,7 @@
     }
   },
   "result": {
-    "item": "atlaslisbon:pastel_de_nata",
+    "item": "atlaslisbon:queijada_da_graciosa",
     "count": 16
   }
 }

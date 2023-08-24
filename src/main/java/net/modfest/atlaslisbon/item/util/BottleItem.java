@@ -1,4 +1,4 @@
-package net.modfest.atlaslisbon.item;
+package net.modfest.atlaslisbon.item.util;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

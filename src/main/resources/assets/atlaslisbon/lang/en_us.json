@@ -3,7 +3,12 @@
   "item.atlaslisbon.pastel_de_nata.plural": "Pastéis de Nata",
   "item.atlaslisbon.queijo_de_azeitao": "Queijo de Azeitão",
   "item.atlaslisbon.ginjinha_bottle": "Ginjinha Bottle",
+  "item.atlaslisbon.queijada_da_graciosa.singular": "Queijada da Graciosa",
+  "item.atlaslisbon.queijada_da_graciosa.plural": "Queijadas da Graciosa",
+  "tag.item.atlaslisbon.recipes.eggs": "Eggs",
   "tag.item.atlaslisbon.recipes.flavors": "Flavors",
+  "tag.item.atlaslisbon.recipes.grain": "Grain",
   "tag.item.atlaslisbon.recipes.greens": "Greens",
-  "tag.item.atlaslisbon.recipes.milk": "Milk"
+  "tag.item.atlaslisbon.recipes.milk": "Milk",
+  "tag.item.atlaslisbon.recipes.water": "Water"
 }

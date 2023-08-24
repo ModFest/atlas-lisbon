@@ -10,18 +10,21 @@ import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.modfest.atlaslisbon.AtlasLisbon;
+import net.modfest.atlaslisbon.item.util.BottleItem;
+import net.modfest.atlaslisbon.item.util.PluralItem;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class LisbonItems {
 
-	public static final Item PASTEL_DE_NATA = new PastelItem(new QuiltItemSettings()
+	public static final Item PASTEL_DE_NATA = new PluralItem(new QuiltItemSettings()
 		.food(new FoodComponent.Builder()
 			.alwaysEdible()
 			.snack()
 			.hunger(3)
 			.saturationModifier(0.3f)
 			.statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 100), 1.0f)
-			.build()));
+			.build()),
+		"item.atlaslisbon.pastel_de_nata");
 
 	public static final Item QUEIJO_DE_AZEITAO = new Item(new QuiltItemSettings()
 		.food(new FoodComponent.Builder()
@@ -39,6 +42,16 @@ public class LisbonItems {
 			.statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100), 0.75f)
 			.build()));
 
+	public static final Item QUEIJADA_DA_GRACIOSA = new PluralItem(new QuiltItemSettings()
+		.food(new FoodComponent.Builder()
+			.alwaysEdible()
+			.snack()
+			.hunger(2)
+			.saturationModifier(0.5f)
+			.statusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 500), 1.0f)
+			.build()),
+		"item.atlaslisbon.queijada_da_graciosa");
+
 	public static void registerItem(Item item, String name) {
 		Registry.register(Registries.ITEM, AtlasLisbon.id(name), item);
 	}
@@ -47,8 +60,9 @@ public class LisbonItems {
 		registerItem(PASTEL_DE_NATA, "pastel_de_nata");
 		registerItem(QUEIJO_DE_AZEITAO, "queijo_de_azeitao");
 		registerItem(GINJINHA_BOTTLE, "ginjinha_bottle");
+		registerItem(QUEIJADA_DA_GRACIOSA, "queijada_da_graciosa");
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINKS).register(entries -> {
-			entries.addAfter(Items.PUMPKIN_PIE, PASTEL_DE_NATA, QUEIJO_DE_AZEITAO);
+			entries.addAfter(Items.PUMPKIN_PIE, PASTEL_DE_NATA, QUEIJO_DE_AZEITAO, QUEIJADA_DA_GRACIOSA);
 			entries.addAfter(Items.HONEY_BOTTLE, GINJINHA_BOTTLE);
 		});
 	}

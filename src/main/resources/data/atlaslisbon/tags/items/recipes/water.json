@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:water_bucket",
+    {
+      "required": false,
+      "id": "#c:water_bottles"
+    }
+  ]
+}
